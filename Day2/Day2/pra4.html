@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRACTICAL 4 OJT</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      header img {
+        width: 100px;
+        height: 100px;
+      }
+      nav {
+        background-color: #e0e0e0;
+        padding: 10px;
+        text-align: center;
+      }
+      nav a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: #333;
+      }
+      nav a:hover {
+        color: #4caf50;
+        transform: scale(1.1);
+      }
+      main {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+      }
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+       
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+      }
+      #button {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 20px;
+      }
+      #button:hover {
+        background-color: #45a049;
+        border-radius: 20px;
+        transform: scale(1.02);
+      }
+      #form {
+        text-align: center;
+        color: #333;
+      }
+      input{
+        border: 2px solid #747474;
+        border-radius: 4px;
+      }
+    </style>
+
+
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc3gbAq8pk9ZTG0bxqh_c0tvTyxH3M7X-ynQ&s"
+        alt=""
+      />
+      <h1
+        style="
+          font-family:
+            &quot;Gill Sans&quot;, &quot;Gill Sans MT&quot;, Calibri,
+            &quot;Trebuchet MS&quot;, sans-serif;
+        "
+      >
+        Silver Oak University
+      </h1>
+    </header>
+    <article>
+      <h3 id="form">Student Registration Form</h3>
+
+      
+    </article>
+    <nav>
+      <a href="#">Home</a>  <a href="#">About</a> 
+      <a href="#">Contact</a>
+      <br />
+    </nav>
+    <marquee direction="right" style="background-color: #ffffff; padding: 10px; color: #ff0000;">
+    Last Registration Date is 20 May 2026
+    </marquee>
+    <main>
+      <form action="">
+        Name: <input type="text" name="name" required placeholder="Enter Name:"/> <br /><br />
+
+        Enrollment No.<input type="text" name="eno" maxlength="12" required placeholder="Enter Enrollment No.:"/>
+        <br /><br />
+
+        Branch:
+        <select name="branch" id="branch">
+          <option value="cs">CS</option>
+          <option value="cse">CSE</option>
+        </select>
+        <br /><br />      
+
+        Gender: <inp ut type="radio" name="gender" value="male" />Male
+        <input type="radio" name="gender" value="female" />Female <br /><br />
+
+        Mobile No. <input type="tel" name="mno" required placeholder="Enter Mobile No.:"/> <br /><br />
+
+        Email: <input type="email" name="email" required placeholder="Enter Email:"/> <br /><br />
+
+        Password: <input type="password" name="password" required placeholder="Enter Password:" /> <br /><br />
+
+        Photo: <input type="file" name="photo" accept="image/*" /> <br /><br />
+
+        Remember Me: <input type="checkbox" name="remember" value="yes" />
+        <br /><br />
+
+        <input type="submit" value="Submit" id="button" />
+        <input type="reset" value="Reset" id="button" />
+      </form>
+
+    </main>
+    <footer>
+      <p>&copy; 2026 Student Registration Form</p>
+    </footer>
+    
+  </body>
+</html>
